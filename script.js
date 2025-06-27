@@ -30,7 +30,7 @@ function convertTemperature() {
             document.body.style.backgroundColor = "lightyellow"; // yellow for moderate temperatures
         } else {
             output.style.color = "white";
-            document.body.style.backgroundColor = "lightred"; // red for high temperatures
+            document.body.style.backgroundColor = "#f7c4b9"; // red for high temperatures
         }
     } else {
         document.body.style.backgroundColor = "white"; // default background
