@@ -5,6 +5,16 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+nav{
+    position: fixed;
+    background: linear-gradient(to right, #40516b, #2e5f62);
+    top: 0px;
+    width: 100%;
+    padding: 3vh;
+    color: white;
+}
+
 body {
   background: linear-gradient(to right, #83a4d4, #b6fbff);
   min-height: 100vh;
@@ -19,7 +29,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   width: 320px;
-  text-align: center;
+  text-align: left;
 }
 
 .converter-container h1 {
@@ -28,19 +38,19 @@ body {
 }
 
 .input-group {
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
 label {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   font-weight: 500;
   color: #444;
 }
 
 input, select {
   width: 100%;
-  padding: 10px;
+  padding: 10px 150px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 16px;
