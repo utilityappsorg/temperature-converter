@@ -16,7 +16,7 @@ nav{
 }
 
 body {
-  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  background-color: linear-gradient(to right, #83a4d4, #b6fbff);
   min-height: 100vh;
   display: flex;
   justify-content: center;
