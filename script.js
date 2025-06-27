@@ -24,9 +24,11 @@ function convertTemperature() {
     if (tempValue !== null) {
         if (tempValue <= 0) {
             output.style.color = "blue";
-        } else if (tempValue > 0 && tempValue < 60) {
+        } else if (tempValue > 0 && tempValue < 60 && type === "CtoF") {
             output.style.color = "blue";
-        } else {
+        } else if (tempValue > 0 && tempValue < 15 && type === "FtoC"){
+            output.style.color = "blue";
+        } else{
             output.style.color = "red";
         }
     }
