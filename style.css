@@ -8,28 +8,64 @@
 
 nav{
     position: fixed;
-    background: linear-gradient(to right, #40516b, #2e5f62);
-    top: 0px;
+    left: 0;
+    top: 0;
     width: 100%;
-    padding: 3vh;
+    background: linear-gradient(to right, #40516b, #2e5f62);
+    padding: 0.7vh 0 0.7vh 0;
     color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 12px;
+}
+
+nav h1 {
+    display: inline-block;
+    margin-left: 18px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+    margin-left: 24px;
+    vertical-align: middle;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #b6fbff;
 }
 
 body {
   background-color: linear-gradient(to right, #83a4d4, #b6fbff);
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  /* Remove flex centering to allow stacking of sections */
+  padding-top: 48px; /* Add padding to clear the fixed navbar */
 }
 
-.converter-container {
+.converter-container, .container {
   background-color: white;
-  padding: 30px 40px;
+  padding: 18px 20px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  width: 320px;
+  width: 290px;
   text-align: left;
+  margin: 18px auto 18px auto;
+  /* margin-top to clear nav, margin-bottom for spacing */
 }
 
 .converter-container h1 {
@@ -50,7 +86,7 @@ label {
 
 input, select {
   width: 100%;
-  padding: 10px 150px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 16px;
@@ -77,4 +113,37 @@ button:hover {
   font-size: 18px;
   font-weight: bold;
   color: #222;
+}
+
+.About {
+  background: #f7fafc;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto 20px auto;
+  padding: 32px 36px;
+  color: #222;
+  font-size: 1.08rem;
+}
+
+.About h2 {
+  margin-bottom: 16px;
+  color: #2e5f62;
+}
+
+.About ul {
+  margin: 18px 0 18px 20px;
+}
+
+.About li {
+  margin-bottom: 8px;
+}
+
+.About p {
+  margin-bottom: 12px;
+}
+
+.About-body{
+    min-height: 120vh;
 }
