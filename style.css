@@ -1,3 +1,4 @@
+/* Reset some default styles */
 * {
   margin: 0;
   padding: 0;
@@ -48,6 +49,7 @@ nav ul li a:hover {
     color: #b6fbff;
 }
 
+/* Page background and layout */
 body {
   background-color: linear-gradient(to right, #83a4d4, #b6fbff);
   min-height: 100vh;
@@ -98,6 +100,7 @@ input:focus, select:focus {
   outline: none;
 }
 
+/* Buttons */
 button {
   margin-top: 15px;
   background-color: #5cc1e0;
