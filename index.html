@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--This is a simple temperature converter that converts Celsius to Fahrenheit.--> 
-    <div class="container"></div>
+    <!--This is a simple temperature converter that converts Celsius to Fahrenheit or vice versa.--> 
+    <div class="container">
         <h1>Temperature Converter</h1>
         <div class="input-group">
-            <label for="celsius">Celsius:</label>
-            <input type="CtoF" id="celsius" placeholder="Enter Celsius">
+            <label for="type">Convert:</label>
+            <select id="type">
+                <option value="CtoF">Celsius to Fahrenheit</option>
+                <option value="FtoC">Fahrenheit to Celsius</option>
+            </select>
         </div>
         <div class="input-group">
-            <label for="fahrenheit">Fahrenheit:</label>
-            <input type="FtoC" id="fahrenheit" placeholder="Enter Fahrenheit">
+            <label for="inputTemp">Temperature:</label>
+            <input type="number" id="inputTemp" placeholder="Enter value">
         </div>
         <button onclick="convertTemperature()">Convert</button>
         <div id="result"></div>
