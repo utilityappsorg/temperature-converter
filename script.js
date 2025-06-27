@@ -21,17 +21,17 @@ function convertTemperature() {
         output.style.color = "black";
     }
 
-    // Color logic based on input value and scale
-    if (!isNaN(inputValue)) {
-        if ((type === "CtoF" && inputValue <= 0) || (type === "FtoC" && inputValue <= 32)) {
-            output.style.color = "blue";
-            document.body.style.backgroundColor = "#e0f7fa"; // light blue
-        } else if ((type === "CtoF" && inputValue > 0 && inputValue < 30) || (type === "FtoC" && inputValue > 32 && inputValue < 86)) {
-            output.style.color = "#b59f00";
-            document.body.style.backgroundColor = "#ffffcc"; // light yellow
-        } else if ((type === "CtoF" && inputValue >= 30) || (type === "FtoC" && inputValue >= 86)) {
-            output.style.color = "red";
-            document.body.style.backgroundColor = "#ffcccc"; // light red
+    // Change color based on temperature value
+    if (tempValue !== null) {
+        if (tempValue <= 0) {
+            output.style.color = "white";
+            document.body.style.backgroundColor = "lightblue";// blue for low temperatures
+        } else if (tempValue > 0 && tempValue < 60) {
+            output.style.color = "black";
+            document.body.style.backgroundColor = "lightyellow"; // yellow for moderate temperatures
+        } else {
+            output.style.color = "white";
+            document.body.style.backgroundColor = "lightred"; // red for high temperatures
         }
     } else {
         document.body.style.backgroundColor = "white"; // default background
