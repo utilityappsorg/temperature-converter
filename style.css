@@ -1,80 +1,66 @@
+/* Reset some default styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
-
-nav{
-    position: fixed;
-    background: linear-gradient(to right, #40516b, #2e5f62);
-    top: 0px;
-    width: 100%;
-    padding: 3vh;
-    color: white;
-}
-
+/* Page background and layout */
 body {
-  background-color: linear-gradient(to right, #83a4d4, #b6fbff);
-  min-height: 100vh;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Converter box */
 .converter-container {
   background-color: white;
-  padding: 30px 40px;
+  padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  width: 320px;
-  text-align: left;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
 }
 
-.converter-container h1 {
+/* Title */
+.converter-container h2 {
   margin-bottom: 20px;
   color: #333;
 }
 
-.input-group {
-  margin: 30px 0;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: 500;
-  color: #444;
-}
-
-input, select {
+/* Input fields */
+input[type="number"] {
   width: 100%;
-  padding: 10px 150px;
-  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
   border-radius: 6px;
   font-size: 16px;
 }
 
+/* Buttons */
 button {
-  margin-top: 20px;
-  padding: 10px 15px;
-  font-size: 16px;
-  background-color: #4285f4;
+  background-color: #36d1dc;
   color: white;
+  padding: 10px 15px;
   border: none;
   border-radius: 6px;
+  font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
+  margin: 5px;
 }
 
 button:hover {
-  background-color: #3367d6;
+  background-color: #2bb3c0;
 }
 
-#result {
-  margin-top: 20px;
+/* Result display */
+.result {
+  margin-top: 15px;
   font-size: 18px;
-  font-weight: bold;
-  color: #222;
+  color: #444;
 }
