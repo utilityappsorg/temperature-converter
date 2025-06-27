@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!--This is a simple temperature converter that converts Celsius to Fahrenheit.--> 
-    <h1>Temperature Converter</h1>
-    <form id="converter-form">
-        <label for="celsius">Celsius:</label>
-        <input type="number" id="celsius" name="celsius" required>
-        <button type="submit">Convert</button>
-    </form>
-    <div id="result"></div>
+    <div class="container"></div>
+        <h1>Temperature Converter</h1>
+        <div class="input-group">
+            <label for="celsius">Celsius:</label>
+            <input type="CtoF" id="celsius" placeholder="Enter Celsius">
+        </div>
+        <div class="input-group">
+            <label for="fahrenheit">Fahrenheit:</label>
+            <input type="FtoC" id="fahrenheit" placeholder="Enter Fahrenheit">
+        </div>
+        <button onclick="convertTemperature()">Convert</button>
+        <div id="result"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
