@@ -7,9 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--This is a simple temperature converter that converts Celsius to Fahrenheit or vice versa.--> 
-    <div class="container">
+    <nav id="navbar">
         <h1>Temperature Converter</h1>
+        <ul>
+            <li><a href="#container">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+    <!--This is a simple temperature converter that converts Celsius to Fahrenheit or vice versa.--> 
+    <div class="container" id="container">
         <div class="input-group">
             <label for="type">Convert:</label>
             <select id="type">
@@ -24,6 +31,9 @@
         <button onclick="convertTemperature()">Convert</button>
         <div id="result"></div>
     </div>
+    <section class="Contact" id="contact-section" style="display:none;">
+        <!-- Placeholder for Contact section -->
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
