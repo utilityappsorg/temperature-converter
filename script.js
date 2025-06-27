@@ -1,6 +1,6 @@
 function convertTemperature() {
     const input = document.getElementById("input").value;
-    const output = document.getElementById("output");
+    const output  = document.getElementById("result");
     const type = document.getElementById("type").value; // e.g., "CtoF" or "FtoC"
 
     let result = "";
