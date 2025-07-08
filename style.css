@@ -158,3 +158,141 @@ button:hover {
 .About-body{
     min-height: 120vh;
 }
+
+/* === Contact Section === */
+section#contact {
+  padding: 60px 20px;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.contact__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.contact__title {
+  font-size: 1.8rem;
+  color: #2e5f62;
+  margin-bottom: 16px;
+}
+
+.contact__description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* If you add a contact form later */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.contact__form label {
+  font-weight: 500;
+  color: #555;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+  border-color: #5cc1e0;
+  outline: none;
+}
+
+.contact__form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact__form button {
+  align-self: flex-start;
+  background-color: #5cc1e0;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact__form button:hover {
+  background-color: #47a9c3;
+}
+
+/* === Footer === */
+
+
+
+footer.footer {
+  background: #40516b;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.footer__title {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: gray
+}
+
+.footer__social-list {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+}
+
+.footer__social-link {
+  color: #669193;
+  font-size: 1.5rem;
+  transition: color 0.2s;
+}
+
+.footer__social-link:hover {
+  color: #b6fbff;
+}
+
+.footer__contact {
+  display: inline-block;
+  color: #669193;
+  text-decoration: none;
+  font-size: 1rem;
+  word-break: break-all;
+  transition: color 0.2s;
+}
+
+.footer__contact:hover {
+  color: #b6fbff;
+}
+
+.footer__copyright {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
